@@ -392,7 +392,78 @@ span {
     transform: translateY(-1rem);
 }
 
-@media (max-width: 991px) {
+
+/* Base Styles */
+
+.home-content h1,
+.home-content h3,
+.home-content p,
+.about-content h2,
+.about-content h3,
+.about-content p,
+.heading,
+.center-heading,
+.services-box h3,
+.services-box p,
+.portfolio-layer h4,
+.portfolio-layer p,
+.contact-content h3,
+.contact-content p {
+    transition: font-size 0.3s ease-in-out;
+}
+
+
+/* Large screens (desktops, 992px and above) */
+
+@media (min-width: 992px) {
+    .home-content h1 {
+        font-size: 5rem;
+    }
+    .home-content h3 {
+        font-size: 3rem;
+    }
+    .home-content p {
+        font-size: 1.6rem;
+    }
+    .about-content h2 {
+        font-size: 3rem;
+    }
+    .about-content h3 {
+        font-size: 2.4rem;
+    }
+    .about-content p {
+        font-size: 1.6rem;
+    }
+    .heading {
+        font-size: 4rem;
+    }
+    .center-heading {
+        font-size: 3rem;
+    }
+    .services-box h3 {
+        font-size: 2.4rem;
+    }
+    .services-box p {
+        font-size: 1.6rem;
+    }
+    .portfolio-layer h4 {
+        font-size: 2.4rem;
+    }
+    .portfolio-layer p {
+        font-size: 1.6rem;
+    }
+    .contact-content h3 {
+        font-size: 3rem;
+    }
+    .contact-content p {
+        font-size: 1.6rem;
+    }
+}
+
+
+/* Medium screens (tablets, 768px - 991px) */
+
+@media (min-width: 768px) and (max-width: 991px) {
     .home-content h1 {
         font-size: 4.5rem;
     }
@@ -437,7 +508,10 @@ span {
     }
 }
 
-@media (max-width: 768px) {
+
+/* Small screens (landscape phones, 481px - 767px) */
+
+@media (min-width: 481px) and (max-width: 767px) {
     .home-content h1 {
         font-size: 3.6rem;
     }
@@ -481,6 +555,9 @@ span {
         font-size: 1.2rem;
     }
 }
+
+
+/* Extra small screens (portrait phones, 480px and below) */
 
 @media (max-width: 480px) {
     .home-content h1 {
